@@ -7,22 +7,22 @@ import org.openxava.annotations.*;
 @Entity
 public class Alumno {
 
-	@Id @Column (length = 20) @Required
+	@Column (length = 15) @Required
 	private String nombre;
 	
-	@Id @Column (length = 20) @Required
+	@Column (length = 15) @Required
 	private String apellido;
 	
-	@Id @Column (length = 15) @Required
+	@Column (length = 15) @Required
 	private String telefono;
 	
 	@Id @Column (length = 10) @Required
 	private String dni;
 	
-	@Id @Column (length = 30) @Required
+	@Column (length = 30) @Required
 	private String mail;
 	
-	@Id @Column (length = 20) @Required
+	@Column (length = 10) @Required
 	private String dirección;
 
 	public String getNombre() {
