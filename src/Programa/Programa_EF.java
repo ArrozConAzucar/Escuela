@@ -7,19 +7,19 @@ import org.openxava.annotations.*;
 @Entity
 public class Programa_EF {
 
-	@Id @Column (length = 2) @Required
+	@Column (length = 2) @Required
 	private int cant_unidades;
 	
-	@Id @Column (length = 4) @Required
+	@Column (length = 4) @Required
 	private int año;
 	
-	@Id @Column (length = 15) @Required
+	@Column (length = 15) @Required
 	private String nombre_profesor;
 	
-	@Id @Column (length = 15) @Required
+	@Column (length = 15) @Required
 	private String apellido_profesor;
 
-	@Id @Column (length = 15) @Required
+	@Id @Column (length = 20) @Required
 	private String materia;
 
 	public int getCant_unidades() {
