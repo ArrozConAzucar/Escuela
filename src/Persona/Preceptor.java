@@ -7,16 +7,16 @@ import org.openxava.annotations.*;
 @Entity 
 public class Preceptor {
 
-	@Id @Column (length = 15) @Required
+	@Column (length = 15) @Required
 	private String nombre;
 	
-	@Id @Column (length = 15) @Required
+	@Column (length = 15) @Required
 	private String apellido;
 	
-	@Id @Column (length = 15) @Required
+	@Id @Column (length = 10) @Required
 	private String dni;
 	
-	@Id @Column (length = 15) @Required
+	@Column (length = 15) @Required
 	private String telefono;
 
 	public String getNombre() {
