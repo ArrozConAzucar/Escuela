@@ -9,10 +9,10 @@ import org.openxava.annotations.*;
 @Entity
 public class EducaciónFísica {
 	
-	@Id @Column (length = 15) @Required
+	@Column (length = 10) @Required
 	private Calendar horario;
 	
-	@Id @Column (length = 15) @Required
+	@Column (length = 10) @Required
 	private String curso;
 
 	public Calendar getHorario() {
