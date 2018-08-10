@@ -19,7 +19,7 @@ public class Taller {
 	private Calendar horario;
 
 	@Id @Column (length = 2) @Required
-	private int Aula;
+	private int aula;
 
 	public String getMateria() {
 		return materia;
