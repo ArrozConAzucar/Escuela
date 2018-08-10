@@ -12,13 +12,13 @@ public class Taller {
 	@Id @Column (length = 20) @Required
 	private String materia;
 
-	@Id @Column (length = 5) @Required
+	@Column (length = 10) @Required
 	private String curso;
 	
-	@Id @Column (length = 5) @Required
+	@Column (length = 10) @Required
 	private Calendar horario;
 
-	@Id @Column (length = 2) @Required
+	@Column (length = 2) @Required
 	private int aula;
 
 	public String getMateria() {
