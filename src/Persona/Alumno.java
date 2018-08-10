@@ -24,6 +24,9 @@ public class Alumno {
 	
 	@Column (length = 10) @Required
 	private String dirección;
+	
+	@Column (length = 5) @Required
+	private boolean ausencia;
 
 	public String getNombre() {
 		return nombre;
@@ -71,6 +74,14 @@ public class Alumno {
 
 	public void setDirección(String dirección) {
 		this.dirección = dirección;
+	}
+
+	public boolean isAusencia() {
+		return ausencia;
+	}
+
+	public void setAusencia(boolean ausencia) {
+		this.ausencia = ausencia;
 	}
 
 }

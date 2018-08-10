@@ -4,6 +4,9 @@ import javax.persistence.*;
 
 import org.openxava.annotations.*;
 
+import Materias.*;
+import Persona.*;
+
 @Entity
 public class Programa_Teoría {
 
@@ -14,13 +17,13 @@ public class Programa_Teoría {
 	private int año;
 	
 	@Column (length = 15) @Required
-	private String nombre_profesor;
+	private Profesor nombre;
 	
 	@Column (length = 15) @Required
-	private String apellido_profesor;
+	private Profesor apellido;
 
 	@Id @Column (length = 20) @Required
-	private String materia;
+	private Materias materia;
 
 	public int getCant_unidades() {
 		return cant_unidades;
@@ -38,27 +41,27 @@ public class Programa_Teoría {
 		this.año = año;
 	}
 
-	public String getNombre_profesor() {
-		return nombre_profesor;
+	public Profesor getNombre() {
+		return nombre;
 	}
 
-	public void setNombre_profesor(String nombre_profesor) {
-		this.nombre_profesor = nombre_profesor;
+	public void setNombre(Profesor nombre) {
+		this.nombre = nombre;
 	}
 
-	public String getApellido_profesor() {
-		return apellido_profesor;
+	public Profesor getApellido() {
+		return apellido;
 	}
 
-	public void setApellido_profesor(String apellido_profesor) {
-		this.apellido_profesor = apellido_profesor;
+	public void setApellido(Profesor apellido) {
+		this.apellido = apellido;
 	}
 
-	public String getMateria() {
+	public Materias getMateria() {
 		return materia;
 	}
 
-	public void setMateria(String materia) {
+	public void setMateria(Materias materia) {
 		this.materia = materia;
 	}
 	

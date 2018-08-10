@@ -6,6 +6,9 @@ import javax.persistence.*;
 
 import org.openxava.annotations.*;
 
+import Aulas.*;
+import Cursos.*;
+
 @Entity
 public class Taller {
 
@@ -13,13 +16,13 @@ public class Taller {
 	private String materia;
 
 	@Column (length = 10) @Required
-	private String curso;
+	private Cursos curso;
 	
 	@Column (length = 10) @Required
 	private Calendar horario;
 
 	@Column (length = 2) @Required
-	private int aula;
+	private Aulas aula;
 
 	public String getMateria() {
 		return materia;
@@ -29,11 +32,11 @@ public class Taller {
 		this.materia = materia;
 	}
 
-	public String getCurso() {
+	public Cursos getCurso() {
 		return curso;
 	}
 
-	public void setCurso(String curso) {
+	public void setCurso(Cursos curso) {
 		this.curso = curso;
 	}
 
@@ -45,11 +48,13 @@ public class Taller {
 		this.horario = horario;
 	}
 
-	public int getAula() {
-		return Aula;
+	public Aulas getAula() {
+		return aula;
 	}
 
-	public void setAula(int aula) {
-		Aula = aula;
+	public void setAula(Aulas aula) {
+		this.aula = aula;
 	}
+
+
 }

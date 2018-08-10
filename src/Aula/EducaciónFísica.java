@@ -6,6 +6,8 @@ import javax.persistence.*;
 
 import org.openxava.annotations.*;
 
+import Cursos.*;
+
 @Entity
 public class EducaciónFísica {
 	
@@ -13,7 +15,7 @@ public class EducaciónFísica {
 	private Calendar horario;
 	
 	@Column (length = 10) @Required
-	private String curso;
+	private Cursos curso;
 
 	public Calendar getHorario() {
 		return horario;
@@ -23,11 +25,11 @@ public class EducaciónFísica {
 		this.horario = horario;
 	}
 
-	public String getCurso() {
+	public Cursos getCurso() {
 		return curso;
 	}
 
-	public void setCurso(String curso) {
+	public void setCurso(Cursos curso) {
 		this.curso = curso;
 	}
 

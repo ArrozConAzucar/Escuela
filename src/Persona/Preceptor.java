@@ -18,6 +18,9 @@ public class Preceptor {
 	
 	@Column (length = 15) @Required
 	private String telefono;
+	
+	@Column (length = 5) @Required
+	private boolean ausencia;
 
 	public String getNombre() {
 		return nombre;
@@ -50,5 +53,14 @@ public class Preceptor {
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
+
+	public boolean isAusencia() {
+		return ausencia;
+	}
+
+	public void setAusencia(boolean ausencia) {
+		this.ausencia = ausencia;
+	}
+	
 	
 }
