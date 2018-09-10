@@ -4,8 +4,21 @@ import javax.persistence.*;
 
 import org.openxava.annotations.*;
 
+import Aula.*;
+
 @Entity
 public class Cursos {
+	
+	@OneToMany
+	private Taller taller;
+	
+	public Taller getTaller() {
+		return taller;
+	}
+	
+	public void setTaller(Taller taller) {
+		this.taller = taller;
+	}
 
 	@Id @Column (length = 10) @Required
 	private String curso;
