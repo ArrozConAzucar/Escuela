@@ -26,7 +26,7 @@ public class Taller {
 	@Id @Column (length = 20) @Required @Hidden
 	private String materia;
 	
-	@Column (length = 20) @Required
+	@Column (length = 10) @Required
 	private Calendar horario;
 
 	@Column (length = 20) @Required
