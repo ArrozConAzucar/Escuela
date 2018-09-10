@@ -29,7 +29,7 @@ public class Taller {
 	@Column (length = 20) @Required
 	private Calendar horario;
 
-	@Column (length = 2) @Required
+	@Column (length = 20) @Required
 	private Aulas aula;
 
 	public String getMateria() {
