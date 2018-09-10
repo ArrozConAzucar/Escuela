@@ -7,7 +7,7 @@ import org.openxava.annotations.*;
 @Entity
 public class Alumno {
 
-	@Column (length = 15) @Required
+	@Column (length = 25) @Required
 	private String nombre;
 	
 	@Column (length = 15) @Required
@@ -22,7 +22,7 @@ public class Alumno {
 	@Column (length = 30) @Required
 	private String mail;
 	
-	@Column (length = 10) @Required
+	@Column (length = 20) @Required
 	private String dirección;
 	
 	@Column (length = 5) @Required
