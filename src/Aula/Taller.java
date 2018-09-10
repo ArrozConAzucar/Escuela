@@ -10,13 +10,21 @@ import Aulas.*;
 import Cursos.*;
 
 @Entity
+@View
 public class Taller {
-
-	@Id @Column (length = 20) @Required
+	@ManyToOne
+	
+	private Collection<Cursos> listaCursos;
+	
+	public Collection<Cursos> getCursos(){
+		return listaCursos;
+	}
+	public void setCursos(Collection<Cursos> listaCursos) {
+		this.listaCursos = listaCursos;
+	}	
+	
+	@Id @Column (length = 20) @Required @Hidden
 	private String materia;
-
-	@Column (length = 10) @Required
-	private Cursos curso;
 	
 	@Column (length = 10) @Required
 	private Calendar horario;
@@ -32,13 +40,13 @@ public class Taller {
 		this.materia = materia;
 	}
 
-	public Cursos getCurso() {
-		return curso;
-	}
-
-	public void setCurso(Cursos curso) {
-		this.curso = curso;
-	}
+//	public Cursos getCurso() {
+//		return curso;
+//	}
+//
+//	public void setCurso(Cursos curso) {
+//		this.curso = curso;
+//	}
 
 	public Calendar getHorario() {
 		return horario;
