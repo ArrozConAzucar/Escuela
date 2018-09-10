@@ -8,7 +8,7 @@ import org.openxava.annotations.*;
 public class Programa_Taller {
 
 
-	@Column (length = 2) @Required
+	@Column (length = 20) @Required
 	private int cant_unidades;
 	
 	@Column (length = 4) @Required
