@@ -20,7 +20,7 @@ public class Cursos {
 		this.taller = taller;
 	}
 
-	@Id @Column (length = 10) @Required
+	@Id @Column (length = 100) @Required
 	private String curso;
 
 	public String getCurso() {
