@@ -22,7 +22,7 @@ public class Programa_Teoría {
 	@Column (length = 15) @Required
 	private Profesor apellido;
 
-	@Id @Column (length = 20) @Required
+	@Id @Column (length = 10) @Required
 	private Materias materia;
 
 	public int getCant_unidades() {
