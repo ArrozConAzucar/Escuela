@@ -14,7 +14,7 @@ public class EducaciónFísica {
 	@Column (length = 10) @Required
 	private Calendar horario;
 	
-	@Column (length = 10) @Required
+	@Column (length = 10) @Required @Hidden
 	private Cursos curso;
 
 	public Calendar getHorario() {
