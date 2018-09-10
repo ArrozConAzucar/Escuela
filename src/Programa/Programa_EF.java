@@ -10,7 +10,7 @@ public class Programa_EF {
 	@Column (length = 2) @Required
 	private int cant_unidades;
 	
-	@Column (length = 4) @Required
+	@Column (length = 2) @Required
 	private int año;
 	
 	@Column (length = 15) @Required
