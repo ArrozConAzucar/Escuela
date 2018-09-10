@@ -7,7 +7,7 @@ import org.openxava.annotations.*;
 @Entity
 public class Materias {
 	
-	@Id @Column (length = 30) @Required
+	@Id @Column (length = 20) @Required
 	private String materia;
 
 	public String getMateria() {
